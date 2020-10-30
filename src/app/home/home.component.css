@@ -1,0 +1,29 @@
+@keyframes arcoiris{
+    0%{border: 3px solid rgb(156, 0, 91);}
+    30%{border: 3px solid rgb(255, 0, 0);}
+    75%{border: 3px solid rgb(0, 146, 156);}
+    100%{border: 3px solid rgb(21, 99, 25);}
+}
+
+img{
+    max-width: 500px;
+    min-width: 200px;
+    max-height: 200px;
+    min-height: 100px;
+}
+
+.card{
+    display: flex;
+    align-self:center;
+    margin: 10px;
+    position: relative;
+    animation-name: arcoiris;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+}
+
+.boton{
+    cursor: pointer;
+}

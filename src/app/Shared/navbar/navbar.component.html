@@ -4,6 +4,8 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <a class="navbar-brand" [routerLink]="['home']">Home</a>
+      <a class="navbar-brand" [routerLink]="['Celulares']">Celulares</a>
+      <a class="navbar-brand" [routerLink]="['Camaras']">Camaras</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
           <a class="nav-link" [routerLink]="['About']">About</a>
@@ -15,3 +17,5 @@
       </form>
     </div>
   </nav>
+
+  <router-outlet> </router-outlet>

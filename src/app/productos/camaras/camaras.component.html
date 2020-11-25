@@ -1,7 +1,20 @@
-<h2>Estos son los celulares</h2>
+<h2>Estas son las Camaras Fotograficas</h2>
+
+<h4> Pipe mas chido </h4>
+<tr>
+   <td>nobre</td>
+   <td>metodo</td>
+   <td>resultado</td>
+</tr>
+<tr>
+   <td>{{nombre}}</td>
+   <td><button (click)="mostrar">motrar/ocultar</button></td>
+   <td>{{nombre | changes}}</td>
+</tr>
+
 <div *ngFor= "let product of ArrayProductos">
- <div *ngIf="product.department == SmartPhones"> 
-  <div class="card" style="width: 18rem;">
+ <div> 
+  <div class="card" style="width: 18rem;" >
        <img src="{{product.img}}" class="card-img-top" alt="...">
     <div class="card-body">
        <p class="card-text">{{product.brand}} {{product.model}} {{product.description}}</p>
@@ -13,6 +26,10 @@
         </label>
     </div>
    </div>
-  </div>
+  </div> 
  </div>
-</div>
+</div> 
+
+<!-- 
+*ngIf="product.rating == true"
+*ngIf="product.department == Fotografía" -->

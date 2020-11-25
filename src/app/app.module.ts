@@ -7,8 +7,9 @@ import { NavbarComponent } from './Shared/navbar/navbar.component';
 import { FooterComponent } from './Shared/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './Shared/about/about.component';
-import { CamarasComponent } from './components/camaras/camaras.component';
-import { CelularesComponent } from './components/celulares/celulares.component';
+import { CamarasComponent } from './productos/camaras/camaras.component';
+import { CelularesComponent } from './productos/celulares/celulares.component';
+import { ChangesPipe } from './pipes/cambiar/changes.pipe';
 
 @NgModule({
   declarations: [
@@ -18,12 +19,15 @@ import { CelularesComponent } from './components/celulares/celulares.component';
     HomeComponent,
     AboutComponent,
     CamarasComponent,
-    CelularesComponent
+    CelularesComponent,
+    ChangesPipe
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
     {path: 'home', component: HomeComponent},
+    {path: 'Celulares', component: CelularesComponent},
+    {path: 'Camaras', component: CamarasComponent},
     {path: 'About', component: AboutComponent}
     ])
 ],
